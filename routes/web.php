@@ -13,11 +13,13 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
+Route::get('/hello', function () {
+    return 'hello world';
 });
 
 Route::get('get', function () {
 });
-
+Route::get('/perkalian/{id}', function ($id) {
+    return   $id*2;
+});
 
